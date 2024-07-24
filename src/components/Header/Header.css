@@ -26,11 +26,28 @@
   color: #343a40;
   margin-left: 20px;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
 }
 
 .navbar-nav .nav-link:hover {
   color: #007bff;
-  border-bottom: 2px solid #007bff;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
 }
 
 .navbar-toggler {
@@ -50,5 +67,34 @@
   .navbar-nav .nav-link {
     margin-left: 0;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 490px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+  }
+
+  .navbar-nav {
+    margin-top: 5px;
   }
 }
