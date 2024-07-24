@@ -1,0 +1,9 @@
+.custom-carousel {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  height: 100%;
+  object-fit: cover;
+}
