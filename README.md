@@ -22,7 +22,7 @@ This is a React application for the Springdale Public School website. It include
 1. **Clone the repository:**
 
    git clone https://github.com/Himanshu111001/School-Webiste-React
-   cd springdale-public-school
+   cd School-Webiste-React
 
 2. Install dependencies:
    Using npm:
